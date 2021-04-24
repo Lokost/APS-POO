@@ -3,4 +3,4 @@ Repositório para compartilharmos os arquivos da APS, para não termos muitos pr
 
 
 ![Ilustração de POO](images/POO.jpg)
-> Arte por Gabriel Gomes
+> Arte por Gabriel Gomes no krita
