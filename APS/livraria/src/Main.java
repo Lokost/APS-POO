@@ -5,6 +5,7 @@ public class Main {
             l1.info();
             l1.abrir();
             l1.irPag(105);
+            l1.info();
             l1.fechar();
             l1.info();
     }

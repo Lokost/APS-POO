@@ -28,6 +28,7 @@ public class Livro {
             this.aberto = false;
             System.out.println("---- * ----");
             System.out.println("O livro foi fechado.");
+            this.atPag = 1;
         } else {
             System.out.println("---- * ----");
             System.out.println("O livro já está fechado.");
@@ -41,6 +42,7 @@ public class Livro {
         System.out.println("Editora: " + this.editora);
         System.out.println("Nº de páginas: " + this.paginas);
         System.out.println("Aberto: " + this.aberto);
+        System.out.println("Página atual: " + this.atPag);
     }
 
     public void irPag(int pag) {
@@ -53,6 +55,7 @@ public class Livro {
         } else {
             System.out.println("---- * ----");
             System.out.printf("Avançado da página: %d%n para a página: %d%n" , this.atPag, pag);
+            this.atPag = pag;
         }
     }
 }
