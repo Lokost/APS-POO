@@ -1,6 +1,6 @@
 package livraria;
 
-public class Livro {
+public class Livro implements Interface{
     protected String nome, autor, editora;
     protected int paginas, atPag;
     protected boolean aberto;
@@ -13,7 +13,7 @@ public class Livro {
         this.paginas = paginas;
         this.aberto = false;
         this.atPag = 1;
-    }
+    } 
     
     // Método abrir, verificando se o livro já está aberto, ou não
     public void abrir() {
@@ -72,5 +72,10 @@ public class Livro {
             System.out.println("---- * ----");
             System.out.println("O livro não está aberto para trocar a página.");
         }
+    }
+
+    @Override
+    public void dados() {
+                info();
     }
 }
