@@ -12,5 +12,7 @@ package livraria;
  */
 public interface Interface{     
         void dados();
-    
+        void abrirlivro();
+        void abrirpagina(int pagina);
+        void fecharlivro();
 }
