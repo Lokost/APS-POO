@@ -16,7 +16,7 @@ public class Livro implements Interface{
     } 
     
     // Método abrir, verificando se o livro já está aberto, ou não
-    public void abrir() {
+    protected void abrir() {
         if (!aberto) {
             this.aberto = true;
             System.out.println("---- * ----");
@@ -28,7 +28,7 @@ public class Livro implements Interface{
     }
     
     // Método fechar, verificando se o livro já está fechado, ou não.
-    public void fechar() {
+    protected void fechar() {
         if (aberto) {
             this.aberto = false;
             System.out.println("---- * ----");
@@ -41,7 +41,7 @@ public class Livro implements Interface{
     }
     
     // Método que imprime todas as informações do livro.
-    public void info() {
+    protected void info() {
         System.out.println("---- * ----");
         System.out.println("Nome: " + this.nome);
         System.out.println("Autor: " + this.autor);
@@ -52,7 +52,7 @@ public class Livro implements Interface{
     }
 
     // Método que troca a página atual do livro se estiver aberto.
-    public void irPag(int pag) {
+    protected void irPag(int pag) {
         if (aberto) {
             if (pag < 1) {
                 System.out.println("---- * ----");
