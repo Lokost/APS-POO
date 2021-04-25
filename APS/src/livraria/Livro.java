@@ -51,18 +51,26 @@ public class Livro {
         System.out.println("Página atual: " + this.atPag);
     }
 
-    // Método que troca a página atual do livro.
+    // Método que troca a página atual do livro se estiver aberto.
     public void irPag(int pag) {
-        if (pag < 1) {
-            System.out.println("---- * ----");
-            System.out.println("Não é possível ir para uma página abaixo de 1");
-        } else if(pag > this.paginas) {
-            System.out.println("---- * ----");
-            System.out.println("O livro não tem essa página");
+        if (aberto) {
+            if (pag < 1) {
+                System.out.println("---- * ----");
+                System.out.println("Não é possível ir para uma página abaixo de 1");
+            } else if(pag > this.paginas) {
+                System.out.println("---- * ----");
+                System.out.println("O livro não tem essa página");
+            } else if (pag == this.atPag) {
+                System.out.println("---- * ----");
+                System.out.println("O livro já está nessa página");
+            } else {
+                System.out.println("---- * ----");
+                System.out.printf("Avançado da página: %d%n para a página: %d%n" , this.atPag, pag);
+                this.atPag = pag;
+            }
         } else {
             System.out.println("---- * ----");
-            System.out.printf("Avançado da página: %d%n para a página: %d%n" , this.atPag, pag);
-            this.atPag = pag;
+            System.out.println("O livro não está aberto para trocar a página.");
         }
     }
 }
