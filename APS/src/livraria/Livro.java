@@ -1,6 +1,6 @@
 package livraria;
 
-public class Livro{
+public class Livro {
     protected String nome, autor, editora;
     protected int paginas, atPag;
     protected boolean aberto;
