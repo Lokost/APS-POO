@@ -5,6 +5,7 @@ public class Livro {
     protected int paginas, atPag;
     protected boolean aberto;
 
+    // Método construtor Livro
     public Livro(String nome, String autor, String editora, int paginas) {
         this.nome = nome;
         this.autor = autor;
@@ -13,7 +14,8 @@ public class Livro {
         this.aberto = false;
         this.atPag = 1;
     }
-
+    
+    // Método abrir, verificando se o livro já está aberto, ou não
     public void abrir() {
         if (!aberto) {
             this.aberto = true;
@@ -24,7 +26,8 @@ public class Livro {
             System.out.println("O livro já está aberto.");
         }
     }
-
+    
+    // Método fechar, verificando se o livro já está fechado, ou não.
     public void fechar() {
         if (aberto) {
             this.aberto = false;
@@ -36,7 +39,8 @@ public class Livro {
             System.out.println("O livro já está fechado.");
         }
     }
-
+    
+    // Método que imprime todas as informações do livro.
     public void info() {
         System.out.println("---- * ----");
         System.out.println("Nome: " + this.nome);
@@ -47,6 +51,7 @@ public class Livro {
         System.out.println("Página atual: " + this.atPag);
     }
 
+    // Método que troca a página atual do livro.
     public void irPag(int pag) {
         if (pag < 1) {
             System.out.println("---- * ----");
