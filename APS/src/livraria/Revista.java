@@ -1,7 +1,8 @@
 package livraria;
 public class Revista extends Livro{
     public Revista(String nome, String autor, String editora, int paginas) {
-      
+        super(nome, autor, editora, paginas);
+
         this.nome = nome;
         this.autor = autor;
         this.editora = editora;
