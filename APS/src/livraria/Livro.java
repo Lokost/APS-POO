@@ -77,5 +77,19 @@ public class Livro implements Interface{
     @Override
     public void dados() {
                 info();
+        }       
+    @Override
+    public void abrirlivro() {
+                abrir();
+                
+    }
+    @Override
+    public void abrirpagina(int pagina){
+                abrir();
+                irPag(pagina);
+    }
+    @Override
+    public void fecharlivro(){
+                fechar();
     }
 }
