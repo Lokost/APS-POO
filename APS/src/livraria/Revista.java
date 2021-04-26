@@ -5,7 +5,7 @@ public class Revista extends Base {
      private int numero_edicao;
      private String data_lancamento;
 
-     public Revista(String nome, String editora, String data_lacamento, int paginas, int numero_edicao, int data_lancamento) {
+     public Revista(String nome, String editora, String data_lacamento, int paginas, int numero_edicao) {
 
         this.nome = nome;
         this.editora = editora;
@@ -17,8 +17,13 @@ public class Revista extends Base {
     }
 
      public void inforev(){
+        System.out.println("---- * ----");
+        System.out.println("Informações da revista:");
         System.out.println("Numero da edição: " + this.numero_edicao);
         System.out.println("Data de lançamento: " + this.data_lancamento);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Qnt. Páginas: " + this.paginas);
+        System.out.println("Página atual: " + this.atPag);
 
      }
 

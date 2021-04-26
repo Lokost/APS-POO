@@ -9,9 +9,15 @@ public class Main {
             l1.dadosLivro();
             l1.fechar();
             l1.dadosLivro();
-
-
-
-
+            
+            Revista veja = new Revista("Nome revista","veja","27/04/2021",100,1);
+            veja.abrir();
+            veja.irPag(107);
+            veja.fechar();
+            veja.inforev();
     }
+
+
+
+
 }
