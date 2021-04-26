@@ -15,6 +15,9 @@ public class Main {
             veja.irPag(107);
             veja.fechar();
             veja.inforev();
+
+            Gibi g1 = new Gibi("Turma da Monica","Mauricio de Souza", "Panini", 70);
+            g1.info();
     }
 
 
