@@ -3,21 +3,21 @@ package livraria;
 public class Main {
     public static void main(String[] args) {
 
-            Livro l1 = new Livro("Harry Potter", "JK Rolling", "Record", 390);
-            l1.dadosLivro();
+            Livro l1 = new Livro("Harry Potter e a Pedra filosofal", "JK Rolling", "Rocco","26/06/1997", 390);
+            l1.dados();
             l1.abrirpagina(105);
-            l1.dadosLivro();
+            l1.dados();
             l1.fechar();
-            l1.dadosLivro();
+            l1.dados();
             
-            Revista veja = new Revista("Nome revista","veja","27/04/2021",100,1);
+            Revista veja = new Revista("Recreio Battle Scenes ","Caras","14/09/2017",100,1);
             veja.abrir();
             veja.irPag(107);
             veja.fechar();
-            veja.inforev();
+            veja.dados();
 
-            Gibi g1 = new Gibi("Turma da Monica","Mauricio de Souza", "Panini", 70);
-            g1.info();
+            Gibi g1 = new Gibi("My Hero Academic", "Vol 1 ", "Kohei Horikoshi", "JBC","03/11/2020", 200);
+            g1.dados();
     }
 
 

@@ -1,12 +1,12 @@
 package livraria;
 
 public class Base {
-    protected String nome, editora;
+    protected String nome, Edicao, editora, data_lancamento;
     protected int paginas, atPag;
     protected boolean aberto;
     
     // Método abrir, verificando se o livro já está aberto, ou não
-    protected void abrir() {
+    protected void abrirb() {
         if (!aberto) {
             this.aberto = true;
             System.out.println("---- * ----");
@@ -18,7 +18,7 @@ public class Base {
     }
     
     // Método fechar, verificando se o livro já está fechado, ou não.
-    protected void fechar() {
+    protected void fecharb() {
         if (aberto) {
             this.aberto = false;
             System.out.println("---- * ----");

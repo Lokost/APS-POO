@@ -1,13 +1,15 @@
 package livraria;
 
-public class Livro extends Base implements Interface {
+public class Livro extends Base implements Intf_Livro {
     private String autor;
+    private String data_lancamento;
     
-    Livro(String nome, String autor, String editora, int paginas) {
+    Livro(String nome, String autor, String editora,String data_lancamento, int paginas) {
         this.nome = nome;
         this.autor = autor;
         this.editora = editora;
-        this.paginas = paginas;
+        this.data_lancamento = data_lancamento;
+        this.paginas = paginas; 
         this.aberto = false;
         this.atPag = 1;
     }
@@ -24,29 +26,31 @@ public class Livro extends Base implements Interface {
         System.out.println("Informações do livro:");
         System.out.println("Nome: " + this.nome);
         System.out.println("Autor(a): " + this.autor);
+        System.out.println("Editora: " + this.editora);
+        System.out.println("Data de lançamento: " + this.data_lancamento);
         System.out.println("Qnt. Páginas: " + this.paginas);
         System.out.println("Aberto: " + abrt);
         System.out.println("Página atual: " + this.atPag);
     }
 
     @Override
-    public void dadosLivro() {
+    public void dados() {
         info();
     }
 
     @Override
-    public void abrirlivro() {
-        abrir();
+    public void abrir() {
+        abrirb();
     }
 
     @Override
     public void abrirpagina(int pagina) {
-        abrir();
+        abrirb();
         irPag(pagina);
     }
 
     @Override
-    public void fecharlivro() {
-        fechar();
+    public void fechar() {
+        fecharb();
     }
 }
